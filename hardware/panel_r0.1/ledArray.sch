@@ -1,0 +1,1056 @@
+EESchema Schematic File Version 4
+LIBS:panel_r0.1-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 27
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 3000 6900 1800 600 
+U 5D715A93
+F0 "sheet5D715A91" 50
+F1 "colDrivers.sch" 50
+F2 "G0" B L 3000 6950 50 
+F3 "G0out" B R 4800 6950 50 
+F4 "SCLK" B L 3000 7250 50 
+F5 "LATCH" B L 3000 7350 50 
+F6 "BLANK" B L 3000 7450 50 
+F7 "R0out" B R 4800 7050 50 
+F8 "B0out" B R 4800 7150 50 
+F9 "R0" B L 3000 7050 50 
+F10 "B0" B L 3000 7150 50 
+$EndSheet
+$Sheet
+S 3050 2150 1200 200 
+U 5D7371BF
+F0 "sheet5D7371BF" 50
+F1 "ledStripe.sch" 50
+F2 "COM" B L 3050 2250 50 
+$EndSheet
+$Comp
+L Device:Q_PMOS_GSD Q1
+U 1 1 5D7371C5
+P 2700 2350
+F 0 "Q1" V 2500 2500 50  0000 C CNN
+F 1 "3412" V 2600 2550 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2900 2450 50  0001 C CNN
+F 3 "~" H 2700 2350 50  0001 C CNN
+	1    2700 2350
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2500 2250 2450 2250
+Text GLabel 2450 850  1    50   UnSpc ~ 0
+P_LED
+Wire Wire Line
+	2900 2250 3050 2250
+$Sheet
+S 3050 2700 1200 200 
+U 5D7371D0
+F0 "sheet5D7371D0" 50
+F1 "ledStripe.sch" 50
+F2 "COM" B L 3050 2800 50 
+$EndSheet
+$Comp
+L Device:Q_PMOS_GSD Q4
+U 1 1 5D7371D6
+P 2700 2900
+F 0 "Q4" V 2500 3050 50  0000 C CNN
+F 1 "3412" V 2600 3100 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2900 3000 50  0001 C CNN
+F 3 "~" H 2700 2900 50  0001 C CNN
+	1    2700 2900
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2500 2800 2450 2800
+Wire Wire Line
+	2900 2800 3050 2800
+Wire Wire Line
+	2450 2250 2450 850 
+Wire Wire Line
+	2450 2250 2450 2800
+Connection ~ 2450 2250
+$Sheet
+S 3050 3250 1200 200 
+U 5D7371E3
+F0 "sheet5D7371E3" 50
+F1 "ledStripe.sch" 50
+F2 "COM" B L 3050 3350 50 
+$EndSheet
+$Comp
+L Device:Q_PMOS_GSD Q7
+U 1 1 5D7371E9
+P 2700 3450
+F 0 "Q7" V 2500 3600 50  0000 C CNN
+F 1 "3412" V 2600 3650 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2900 3550 50  0001 C CNN
+F 3 "~" H 2700 3450 50  0001 C CNN
+	1    2700 3450
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2500 3350 2450 3350
+Wire Wire Line
+	2900 3350 3050 3350
+Wire Wire Line
+	2450 2800 2450 3350
+Connection ~ 2450 2800
+$Sheet
+S 3050 3800 1200 200 
+U 5D7371F5
+F0 "sheet5D7371F5" 50
+F1 "ledStripe.sch" 50
+F2 "COM" B L 3050 3900 50 
+$EndSheet
+$Comp
+L Device:Q_PMOS_GSD Q10
+U 1 1 5D7371FB
+P 2700 4000
+F 0 "Q10" V 2500 4150 50  0000 C CNN
+F 1 "3412" V 2600 4200 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2900 4100 50  0001 C CNN
+F 3 "~" H 2700 4000 50  0001 C CNN
+	1    2700 4000
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2500 3900 2450 3900
+Wire Wire Line
+	2900 3900 3050 3900
+Wire Wire Line
+	2450 3350 2450 3900
+Connection ~ 2450 3350
+$Sheet
+S 3050 4350 1200 200 
+U 5D737207
+F0 "sheet5D737207" 50
+F1 "ledStripe.sch" 50
+F2 "COM" B L 3050 4450 50 
+$EndSheet
+$Comp
+L Device:Q_PMOS_GSD Q13
+U 1 1 5D73720D
+P 2700 4550
+F 0 "Q13" V 2500 4700 50  0000 C CNN
+F 1 "3412" V 2600 4750 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2900 4650 50  0001 C CNN
+F 3 "~" H 2700 4550 50  0001 C CNN
+	1    2700 4550
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2500 4450 2450 4450
+Wire Wire Line
+	2900 4450 3050 4450
+Wire Wire Line
+	2450 3900 2450 4450
+$Sheet
+S 3050 4900 1200 200 
+U 5D737218
+F0 "sheet5D737218" 50
+F1 "ledStripe.sch" 50
+F2 "COM" B L 3050 5000 50 
+$EndSheet
+$Comp
+L Device:Q_PMOS_GSD Q16
+U 1 1 5D73721E
+P 2700 5100
+F 0 "Q16" V 2500 5250 50  0000 C CNN
+F 1 "3412" V 2600 5300 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2900 5200 50  0001 C CNN
+F 3 "~" H 2700 5100 50  0001 C CNN
+	1    2700 5100
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2500 5000 2450 5000
+Wire Wire Line
+	2900 5000 3050 5000
+Wire Wire Line
+	2450 4450 2450 5000
+Connection ~ 2450 4450
+Connection ~ 2450 3900
+$Sheet
+S 3050 5450 1200 200 
+U 5D73722B
+F0 "sheet5D73722B" 50
+F1 "ledStripe.sch" 50
+F2 "COM" B L 3050 5550 50 
+$EndSheet
+$Comp
+L Device:Q_PMOS_GSD Q19
+U 1 1 5D737231
+P 2700 5650
+F 0 "Q19" V 2500 5800 50  0000 C CNN
+F 1 "3412" V 2600 5850 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2900 5750 50  0001 C CNN
+F 3 "~" H 2700 5650 50  0001 C CNN
+	1    2700 5650
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2500 5550 2450 5550
+Wire Wire Line
+	2900 5550 3050 5550
+Wire Wire Line
+	2450 5000 2450 5550
+$Sheet
+S 3050 6000 1200 200 
+U 5D73723C
+F0 "sheet5D73723C" 50
+F1 "ledStripe.sch" 50
+F2 "COM" B L 3050 6100 50 
+$EndSheet
+$Comp
+L Device:Q_PMOS_GSD Q22
+U 1 1 5D737242
+P 2700 6200
+F 0 "Q22" V 2500 6350 50  0000 C CNN
+F 1 "3412" V 2600 6400 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2900 6300 50  0001 C CNN
+F 3 "~" H 2700 6200 50  0001 C CNN
+	1    2700 6200
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2500 6100 2450 6100
+Wire Wire Line
+	2900 6100 3050 6100
+Wire Wire Line
+	2450 5550 2450 6100
+Connection ~ 2450 5550
+Connection ~ 2450 5000
+Text HLabel 2100 6950 0    50   UnSpc ~ 0
+G
+Text HLabel 2100 7050 0    50   UnSpc ~ 0
+R
+Text HLabel 2100 7150 0    50   UnSpc ~ 0
+B
+Text HLabel 2100 7250 0    50   UnSpc ~ 0
+SCLK
+Text HLabel 2100 7350 0    50   UnSpc ~ 0
+LATCH
+Text HLabel 2100 7450 0    50   UnSpc ~ 0
+BLANK
+Wire Wire Line
+	2100 6950 3000 6950
+Wire Wire Line
+	2100 7050 3000 7050
+Wire Wire Line
+	2100 7150 3000 7150
+Wire Wire Line
+	2100 7250 3000 7250
+Wire Wire Line
+	2100 7350 3000 7350
+Wire Wire Line
+	2100 7450 3000 7450
+Text HLabel 5700 6950 2    50   UnSpc ~ 0
+Gout
+Text HLabel 5700 7050 2    50   UnSpc ~ 0
+Rout
+Text HLabel 5700 7150 2    50   UnSpc ~ 0
+Bout
+Wire Wire Line
+	5700 6950 4800 6950
+Wire Wire Line
+	5700 7050 4800 7050
+Wire Wire Line
+	5700 7150 4800 7150
+$Comp
+L 74xx:74HC595 U1
+U 1 1 5D776E7F
+P 1650 1800
+F 0 "U1" V 2300 1450 50  0000 R CNN
+F 1 "74HC595" V 2200 1450 50  0000 R CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 1650 1800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 1650 1800 50  0001 C CNN
+	1    1650 1800
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	1950 2200 1950 6400
+Wire Wire Line
+	1950 6400 2700 6400
+Wire Wire Line
+	1850 5850 1850 2200
+Wire Wire Line
+	1850 5850 2700 5850
+Wire Wire Line
+	1750 2200 1750 5300
+Wire Wire Line
+	1750 5300 2700 5300
+Wire Wire Line
+	1650 4750 1650 2200
+Wire Wire Line
+	1650 4750 2700 4750
+Wire Wire Line
+	1550 4200 1550 2200
+Wire Wire Line
+	1550 4200 2700 4200
+Wire Wire Line
+	1450 3650 1450 2200
+Wire Wire Line
+	1450 3650 2700 3650
+Wire Wire Line
+	1350 2200 1350 3100
+Wire Wire Line
+	1350 3100 2700 3100
+Wire Wire Line
+	1250 2550 1250 2200
+Wire Wire Line
+	1250 2550 2700 2550
+Wire Wire Line
+	1050 1800 950  1800
+Wire Wire Line
+	950  1800 950  1550
+Text GLabel 950  1550 1    50   UnSpc ~ 0
+P_LED
+$Comp
+L Device:C C1
+U 1 1 5D7B78C5
+P 950 2000
+F 0 "C1" H 1065 2046 50  0000 L CNN
+F 1 "100nF" H 1065 1955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 988 1850 50  0001 C CNN
+F 3 "~" H 950 2000 50  0001 C CNN
+	1    950  2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5D7B8058
+P 950 2200
+F 0 "#PWR04" H 950 1950 50  0001 C CNN
+F 1 "GND" H 955 2027 50  0000 C CNN
+F 2 "" H 950 2200 50  0001 C CNN
+F 3 "" H 950 2200 50  0001 C CNN
+	1    950  2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  2200 950  2150
+Wire Wire Line
+	950  1800 950  1850
+Connection ~ 950  1800
+Wire Wire Line
+	1250 1400 1250 1250
+Wire Wire Line
+	1250 1250 800  1250
+Wire Wire Line
+	1450 1400 1450 1150
+Wire Wire Line
+	1450 1150 800  1150
+Wire Wire Line
+	1750 1400 1750 1050
+Wire Wire Line
+	1750 1050 800  1050
+Wire Wire Line
+	1850 1400 1850 950 
+Wire Wire Line
+	1850 950  800  950 
+Text GLabel 1550 850  1    50   UnSpc ~ 0
+P_LED
+Wire Wire Line
+	1550 1400 1550 850 
+Connection ~ 1450 1150
+Connection ~ 1750 1050
+Connection ~ 1850 950 
+Wire Wire Line
+	2150 2200 2150 2300
+Wire Wire Line
+	2150 2300 2350 2300
+Wire Wire Line
+	2350 2300 2350 2000
+Wire Wire Line
+	2350 2000 2850 2000
+Wire Wire Line
+	2850 2000 2850 1250
+$Comp
+L power:GND #PWR01
+U 1 1 5D7D26EC
+P 2500 1800
+F 0 "#PWR01" H 2500 1550 50  0001 C CNN
+F 1 "GND" V 2505 1672 50  0000 R CNN
+F 2 "" H 2500 1800 50  0001 C CNN
+F 3 "" H 2500 1800 50  0001 C CNN
+	1    2500 1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2500 1800 2350 1800
+$Sheet
+S 6500 2150 1200 200 
+U 5D7D53E6
+F0 "sheet5D7D53E6" 50
+F1 "ledStripe.sch" 50
+F2 "COM" B L 6500 2250 50 
+$EndSheet
+$Comp
+L Device:Q_PMOS_GSD Q2
+U 1 1 5D7D53EC
+P 6150 2350
+F 0 "Q2" V 5950 2500 50  0000 C CNN
+F 1 "3412" V 6050 2550 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6350 2450 50  0001 C CNN
+F 3 "~" H 6150 2350 50  0001 C CNN
+	1    6150 2350
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5950 2250 5900 2250
+Text GLabel 5900 850  1    50   UnSpc ~ 0
+P_LED
+Wire Wire Line
+	6350 2250 6500 2250
+$Sheet
+S 6500 2700 1200 200 
+U 5D7D53F6
+F0 "sheet5D7D53F6" 50
+F1 "ledStripe.sch" 50
+F2 "COM" B L 6500 2800 50 
+$EndSheet
+$Comp
+L Device:Q_PMOS_GSD Q5
+U 1 1 5D7D53FC
+P 6150 2900
+F 0 "Q5" V 5950 3050 50  0000 C CNN
+F 1 "3412" V 6050 3100 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6350 3000 50  0001 C CNN
+F 3 "~" H 6150 2900 50  0001 C CNN
+	1    6150 2900
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5950 2800 5900 2800
+Wire Wire Line
+	6350 2800 6500 2800
+Wire Wire Line
+	5900 2250 5900 850 
+Wire Wire Line
+	5900 2250 5900 2800
+Connection ~ 5900 2250
+$Sheet
+S 6500 3250 1200 200 
+U 5D7D5408
+F0 "sheet5D7D5408" 50
+F1 "ledStripe.sch" 50
+F2 "COM" B L 6500 3350 50 
+$EndSheet
+$Comp
+L Device:Q_PMOS_GSD Q8
+U 1 1 5D7D540E
+P 6150 3450
+F 0 "Q8" V 5950 3600 50  0000 C CNN
+F 1 "3412" V 6050 3650 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6350 3550 50  0001 C CNN
+F 3 "~" H 6150 3450 50  0001 C CNN
+	1    6150 3450
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5950 3350 5900 3350
+Wire Wire Line
+	6350 3350 6500 3350
+Wire Wire Line
+	5900 2800 5900 3350
+Connection ~ 5900 2800
+$Sheet
+S 6500 3800 1200 200 
+U 5D7D5419
+F0 "sheet5D7D5419" 50
+F1 "ledStripe.sch" 50
+F2 "COM" B L 6500 3900 50 
+$EndSheet
+$Comp
+L Device:Q_PMOS_GSD Q11
+U 1 1 5D7D541F
+P 6150 4000
+F 0 "Q11" V 5950 4150 50  0000 C CNN
+F 1 "3412" V 6050 4200 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6350 4100 50  0001 C CNN
+F 3 "~" H 6150 4000 50  0001 C CNN
+	1    6150 4000
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5950 3900 5900 3900
+Wire Wire Line
+	6350 3900 6500 3900
+Wire Wire Line
+	5900 3350 5900 3900
+Connection ~ 5900 3350
+$Sheet
+S 6500 4350 1200 200 
+U 5D7D542A
+F0 "sheet5D7D542A" 50
+F1 "ledStripe.sch" 50
+F2 "COM" B L 6500 4450 50 
+$EndSheet
+$Comp
+L Device:Q_PMOS_GSD Q14
+U 1 1 5D7D5430
+P 6150 4550
+F 0 "Q14" V 5950 4700 50  0000 C CNN
+F 1 "3412" V 6050 4750 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6350 4650 50  0001 C CNN
+F 3 "~" H 6150 4550 50  0001 C CNN
+	1    6150 4550
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5950 4450 5900 4450
+Wire Wire Line
+	6350 4450 6500 4450
+Wire Wire Line
+	5900 3900 5900 4450
+$Sheet
+S 6500 4900 1200 200 
+U 5D7D543A
+F0 "sheet5D7D543A" 50
+F1 "ledStripe.sch" 50
+F2 "COM" B L 6500 5000 50 
+$EndSheet
+$Comp
+L Device:Q_PMOS_GSD Q17
+U 1 1 5D7D5440
+P 6150 5100
+F 0 "Q17" V 5950 5250 50  0000 C CNN
+F 1 "3412" V 6050 5300 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6350 5200 50  0001 C CNN
+F 3 "~" H 6150 5100 50  0001 C CNN
+	1    6150 5100
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5950 5000 5900 5000
+Wire Wire Line
+	6350 5000 6500 5000
+Wire Wire Line
+	5900 4450 5900 5000
+Connection ~ 5900 4450
+Connection ~ 5900 3900
+$Sheet
+S 6500 5450 1200 200 
+U 5D7D544C
+F0 "sheet5D7D544C" 50
+F1 "ledStripe.sch" 50
+F2 "COM" B L 6500 5550 50 
+$EndSheet
+$Comp
+L Device:Q_PMOS_GSD Q20
+U 1 1 5D7D5452
+P 6150 5650
+F 0 "Q20" V 5950 5800 50  0000 C CNN
+F 1 "3412" V 6050 5850 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6350 5750 50  0001 C CNN
+F 3 "~" H 6150 5650 50  0001 C CNN
+	1    6150 5650
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5950 5550 5900 5550
+Wire Wire Line
+	6350 5550 6500 5550
+Wire Wire Line
+	5900 5000 5900 5550
+$Sheet
+S 6500 6000 1200 200 
+U 5D7D545C
+F0 "sheet5D7D545C" 50
+F1 "ledStripe.sch" 50
+F2 "COM" B L 6500 6100 50 
+$EndSheet
+$Comp
+L Device:Q_PMOS_GSD Q23
+U 1 1 5D7D5462
+P 6150 6200
+F 0 "Q23" V 5950 6350 50  0000 C CNN
+F 1 "3412" V 6050 6400 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6350 6300 50  0001 C CNN
+F 3 "~" H 6150 6200 50  0001 C CNN
+	1    6150 6200
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5950 6100 5900 6100
+Wire Wire Line
+	6350 6100 6500 6100
+Wire Wire Line
+	5900 5550 5900 6100
+Connection ~ 5900 5550
+Connection ~ 5900 5000
+$Comp
+L 74xx:74HC595 U2
+U 1 1 5D7D5471
+P 5100 1800
+F 0 "U2" V 5750 1450 50  0000 R CNN
+F 1 "74HC595" V 5650 1450 50  0000 R CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 5100 1800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 5100 1800 50  0001 C CNN
+	1    5100 1800
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5400 2200 5400 6400
+Wire Wire Line
+	5400 6400 6150 6400
+Wire Wire Line
+	5300 5850 5300 2200
+Wire Wire Line
+	5300 5850 6150 5850
+Wire Wire Line
+	5200 2200 5200 5300
+Wire Wire Line
+	5200 5300 6150 5300
+Wire Wire Line
+	5100 4750 5100 2200
+Wire Wire Line
+	5100 4750 6150 4750
+Wire Wire Line
+	5000 4200 5000 2200
+Wire Wire Line
+	5000 4200 6150 4200
+Wire Wire Line
+	4900 3650 4900 2200
+Wire Wire Line
+	4900 3650 6150 3650
+Wire Wire Line
+	4800 2200 4800 3100
+Wire Wire Line
+	4800 3100 6150 3100
+Wire Wire Line
+	4700 2550 4700 2200
+Wire Wire Line
+	4700 2550 6150 2550
+Wire Wire Line
+	4500 1800 4400 1800
+Wire Wire Line
+	4400 1800 4400 1550
+Text GLabel 4400 1550 1    50   UnSpc ~ 0
+P_LED
+$Comp
+L Device:C C2
+U 1 1 5D7D548E
+P 4400 2000
+F 0 "C2" H 4515 2046 50  0000 L CNN
+F 1 "100nF" H 4515 1955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4438 1850 50  0001 C CNN
+F 3 "~" H 4400 2000 50  0001 C CNN
+	1    4400 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5D7D5498
+P 4400 2200
+F 0 "#PWR05" H 4400 1950 50  0001 C CNN
+F 1 "GND" H 4405 2027 50  0000 C CNN
+F 2 "" H 4400 2200 50  0001 C CNN
+F 3 "" H 4400 2200 50  0001 C CNN
+	1    4400 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2200 4400 2150
+Wire Wire Line
+	4400 1800 4400 1850
+Connection ~ 4400 1800
+Wire Wire Line
+	4700 1400 4700 1250
+Wire Wire Line
+	4900 1400 4900 1150
+Wire Wire Line
+	5200 1400 5200 1050
+Wire Wire Line
+	5300 1400 5300 950 
+Text GLabel 5000 850  1    50   UnSpc ~ 0
+P_LED
+Wire Wire Line
+	5000 1400 5000 850 
+Connection ~ 4900 1150
+Connection ~ 5200 1050
+Connection ~ 5300 950 
+Wire Wire Line
+	5600 2200 5600 2300
+Wire Wire Line
+	5600 2300 5800 2300
+Wire Wire Line
+	5800 2300 5800 2000
+Wire Wire Line
+	5800 2000 6300 2000
+Wire Wire Line
+	6300 2000 6300 1250
+$Comp
+L power:GND #PWR02
+U 1 1 5D7D54BB
+P 5950 1800
+F 0 "#PWR02" H 5950 1550 50  0001 C CNN
+F 1 "GND" V 5955 1672 50  0000 R CNN
+F 2 "" H 5950 1800 50  0001 C CNN
+F 3 "" H 5950 1800 50  0001 C CNN
+	1    5950 1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5950 1800 5800 1800
+$Sheet
+S 9950 2150 1200 200 
+U 5D82B273
+F0 "sheet5D82B273" 50
+F1 "ledStripe.sch" 50
+F2 "COM" B L 9950 2250 50 
+$EndSheet
+$Comp
+L Device:Q_PMOS_GSD Q3
+U 1 1 5D82B279
+P 9600 2350
+F 0 "Q3" V 9400 2500 50  0000 C CNN
+F 1 "3412" V 9500 2550 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9800 2450 50  0001 C CNN
+F 3 "~" H 9600 2350 50  0001 C CNN
+	1    9600 2350
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9400 2250 9350 2250
+Text GLabel 9350 850  1    50   UnSpc ~ 0
+P_LED
+Wire Wire Line
+	9800 2250 9950 2250
+$Sheet
+S 9950 2700 1200 200 
+U 5D82B283
+F0 "sheet5D82B283" 50
+F1 "ledStripe.sch" 50
+F2 "COM" B L 9950 2800 50 
+$EndSheet
+$Comp
+L Device:Q_PMOS_GSD Q6
+U 1 1 5D82B289
+P 9600 2900
+F 0 "Q6" V 9400 3050 50  0000 C CNN
+F 1 "3412" V 9500 3100 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9800 3000 50  0001 C CNN
+F 3 "~" H 9600 2900 50  0001 C CNN
+	1    9600 2900
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9400 2800 9350 2800
+Wire Wire Line
+	9800 2800 9950 2800
+Wire Wire Line
+	9350 2250 9350 850 
+Wire Wire Line
+	9350 2250 9350 2800
+Connection ~ 9350 2250
+$Sheet
+S 9950 3250 1200 200 
+U 5D82B295
+F0 "sheet5D82B295" 50
+F1 "ledStripe.sch" 50
+F2 "COM" B L 9950 3350 50 
+$EndSheet
+$Comp
+L Device:Q_PMOS_GSD Q9
+U 1 1 5D82B29B
+P 9600 3450
+F 0 "Q9" V 9400 3600 50  0000 C CNN
+F 1 "3412" V 9500 3650 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9800 3550 50  0001 C CNN
+F 3 "~" H 9600 3450 50  0001 C CNN
+	1    9600 3450
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9400 3350 9350 3350
+Wire Wire Line
+	9800 3350 9950 3350
+Wire Wire Line
+	9350 2800 9350 3350
+Connection ~ 9350 2800
+$Sheet
+S 9950 3800 1200 200 
+U 5D82B2A6
+F0 "sheet5D82B2A6" 50
+F1 "ledStripe.sch" 50
+F2 "COM" B L 9950 3900 50 
+$EndSheet
+$Comp
+L Device:Q_PMOS_GSD Q12
+U 1 1 5D82B2AC
+P 9600 4000
+F 0 "Q12" V 9400 4150 50  0000 C CNN
+F 1 "3412" V 9500 4200 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9800 4100 50  0001 C CNN
+F 3 "~" H 9600 4000 50  0001 C CNN
+	1    9600 4000
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9400 3900 9350 3900
+Wire Wire Line
+	9800 3900 9950 3900
+Wire Wire Line
+	9350 3350 9350 3900
+Connection ~ 9350 3350
+$Sheet
+S 9950 4350 1200 200 
+U 5D82B2B7
+F0 "sheet5D82B2B7" 50
+F1 "ledStripe.sch" 50
+F2 "COM" B L 9950 4450 50 
+$EndSheet
+$Comp
+L Device:Q_PMOS_GSD Q15
+U 1 1 5D82B2BD
+P 9600 4550
+F 0 "Q15" V 9400 4700 50  0000 C CNN
+F 1 "3412" V 9500 4750 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9800 4650 50  0001 C CNN
+F 3 "~" H 9600 4550 50  0001 C CNN
+	1    9600 4550
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9400 4450 9350 4450
+Wire Wire Line
+	9800 4450 9950 4450
+Wire Wire Line
+	9350 3900 9350 4450
+$Sheet
+S 9950 4900 1200 200 
+U 5D82B2C7
+F0 "sheet5D82B2C7" 50
+F1 "ledStripe.sch" 50
+F2 "COM" B L 9950 5000 50 
+$EndSheet
+$Comp
+L Device:Q_PMOS_GSD Q18
+U 1 1 5D82B2CD
+P 9600 5100
+F 0 "Q18" V 9400 5250 50  0000 C CNN
+F 1 "3412" V 9500 5300 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9800 5200 50  0001 C CNN
+F 3 "~" H 9600 5100 50  0001 C CNN
+	1    9600 5100
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9400 5000 9350 5000
+Wire Wire Line
+	9800 5000 9950 5000
+Wire Wire Line
+	9350 4450 9350 5000
+Connection ~ 9350 4450
+Connection ~ 9350 3900
+$Sheet
+S 9950 5450 1200 200 
+U 5D82B2D9
+F0 "sheet5D82B2D9" 50
+F1 "ledStripe.sch" 50
+F2 "COM" B L 9950 5550 50 
+$EndSheet
+$Comp
+L Device:Q_PMOS_GSD Q21
+U 1 1 5D82B2DF
+P 9600 5650
+F 0 "Q21" V 9400 5800 50  0000 C CNN
+F 1 "3412" V 9500 5850 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9800 5750 50  0001 C CNN
+F 3 "~" H 9600 5650 50  0001 C CNN
+	1    9600 5650
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9400 5550 9350 5550
+Wire Wire Line
+	9800 5550 9950 5550
+Wire Wire Line
+	9350 5000 9350 5550
+$Sheet
+S 9950 6000 1200 200 
+U 5D82B2E9
+F0 "sheet5D82B2E9" 50
+F1 "ledStripe.sch" 50
+F2 "COM" B L 9950 6100 50 
+$EndSheet
+$Comp
+L Device:Q_PMOS_GSD Q24
+U 1 1 5D82B2EF
+P 9600 6200
+F 0 "Q24" V 9400 6350 50  0000 C CNN
+F 1 "3412" V 9500 6400 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9800 6300 50  0001 C CNN
+F 3 "~" H 9600 6200 50  0001 C CNN
+	1    9600 6200
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9400 6100 9350 6100
+Wire Wire Line
+	9800 6100 9950 6100
+Wire Wire Line
+	9350 5550 9350 6100
+Connection ~ 9350 5550
+Connection ~ 9350 5000
+$Comp
+L 74xx:74HC595 U3
+U 1 1 5D82B2FE
+P 8550 1800
+F 0 "U3" V 9200 1450 50  0000 R CNN
+F 1 "74HC595" V 9100 1450 50  0000 R CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 8550 1800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 8550 1800 50  0001 C CNN
+	1    8550 1800
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	8850 2200 8850 6400
+Wire Wire Line
+	8850 6400 9600 6400
+Wire Wire Line
+	8750 5850 8750 2200
+Wire Wire Line
+	8750 5850 9600 5850
+Wire Wire Line
+	8650 2200 8650 5300
+Wire Wire Line
+	8650 5300 9600 5300
+Wire Wire Line
+	8550 4750 8550 2200
+Wire Wire Line
+	8550 4750 9600 4750
+Wire Wire Line
+	8450 4200 8450 2200
+Wire Wire Line
+	8450 4200 9600 4200
+Wire Wire Line
+	8350 3650 8350 2200
+Wire Wire Line
+	8350 3650 9600 3650
+Wire Wire Line
+	8250 2200 8250 3100
+Wire Wire Line
+	8250 3100 9600 3100
+Wire Wire Line
+	8150 2550 8150 2200
+Wire Wire Line
+	8150 2550 9600 2550
+Wire Wire Line
+	7950 1800 7850 1800
+Wire Wire Line
+	7850 1800 7850 1550
+Text GLabel 7850 1550 1    50   UnSpc ~ 0
+P_LED
+$Comp
+L Device:C C3
+U 1 1 5D82B31B
+P 7850 2000
+F 0 "C3" H 7965 2046 50  0000 L CNN
+F 1 "100nF" H 7965 1955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7888 1850 50  0001 C CNN
+F 3 "~" H 7850 2000 50  0001 C CNN
+	1    7850 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5D82B325
+P 7850 2200
+F 0 "#PWR06" H 7850 1950 50  0001 C CNN
+F 1 "GND" H 7855 2027 50  0000 C CNN
+F 2 "" H 7850 2200 50  0001 C CNN
+F 3 "" H 7850 2200 50  0001 C CNN
+	1    7850 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 2200 7850 2150
+Wire Wire Line
+	7850 1800 7850 1850
+Connection ~ 7850 1800
+Wire Wire Line
+	8150 1400 8150 1250
+Wire Wire Line
+	8350 1400 8350 1150
+Wire Wire Line
+	8650 1400 8650 1050
+Wire Wire Line
+	8750 1400 8750 950 
+Text GLabel 8450 850  1    50   UnSpc ~ 0
+P_LED
+Wire Wire Line
+	8450 1400 8450 850 
+Wire Wire Line
+	9050 2200 9050 2300
+Wire Wire Line
+	9050 2300 9250 2300
+Wire Wire Line
+	9250 2300 9250 2000
+Wire Wire Line
+	9250 2000 9750 2000
+Wire Wire Line
+	9750 2000 9750 1250
+Wire Wire Line
+	9750 1250 9900 1250
+$Comp
+L power:GND #PWR03
+U 1 1 5D82B348
+P 9400 1800
+F 0 "#PWR03" H 9400 1550 50  0001 C CNN
+F 1 "GND" V 9405 1672 50  0000 R CNN
+F 2 "" H 9400 1800 50  0001 C CNN
+F 3 "" H 9400 1800 50  0001 C CNN
+	1    9400 1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9400 1800 9250 1800
+Wire Wire Line
+	4900 1150 8350 1150
+Wire Wire Line
+	5200 1050 8650 1050
+Wire Wire Line
+	5300 950  8750 950 
+Wire Wire Line
+	6300 1250 8150 1250
+Wire Wire Line
+	1450 1150 4900 1150
+Wire Wire Line
+	1750 1050 5200 1050
+Wire Wire Line
+	1850 950  5300 950 
+Wire Wire Line
+	2850 1250 4700 1250
+Text Label 900  1250 0    50   ~ 0
+ROWdat
+Text Label 2200 7250 0    50   ~ 0
+SCLK
+Text Label 900  1150 0    50   ~ 0
+SCLK
+Text Label 900  1050 0    50   ~ 0
+ROWlatch
+Text Label 900  950  0    50   ~ 0
+ROWblank
+Text HLabel 800  1150 0    50   UnSpc ~ 0
+SCLK
+Text HLabel 800  1250 0    50   UnSpc ~ 0
+ROWdat
+Text HLabel 800  1050 0    50   UnSpc ~ 0
+ROWlatch
+Text HLabel 800  950  0    50   UnSpc ~ 0
+ROWblank
+Text HLabel 9900 1250 2    50   UnSpc ~ 0
+ROWout
+$EndSCHEMATC
