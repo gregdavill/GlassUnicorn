@@ -1,0 +1,57 @@
+12530041091841
+gkl_misc
+0197054201
+
+
+0
+2
+1
+gkl_misc
+AIF04ZPFC-01L
+
+
+0
+24
+24
+gkl_misc
+EVQP4
+
+
+0
+4
+4
+gkl_misc
+PTS_810_SMT_Switch
+
+
+0
+4
+2
+gkl_misc
+SSOP-24_slim
+SSOP24: plastic shrink small outline package; 24 leads; body width 3.9 mm; lead pitch 0.635; (see NXP SSOP-TSSOP-VSO-REFLOW.pdf and sot556-1_po.pdf)
+SSOP 0.635
+0
+24
+24
+gkl_misc
+TSSOP-16_slim
+16-Lead Plastic Thin Shrink Small Outline (ST)-4.4 mm Body [TSSOP] (see Microchip Packaging Specification 00000049BS.pdf)
+SSOP 0.65
+0
+16
+16
+gkl_misc
+TestPoint_Pad_D0.5mm
+SMD pad as test Point, diameter 1.0mm
+test point SMD pad
+0
+1
+1
+gkl_misc
+X40-stepper
+
+
+0
+8
+8

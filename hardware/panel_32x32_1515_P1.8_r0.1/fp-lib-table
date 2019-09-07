@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name gkl_led)(type KiCad)(uri /home/greg/projects/GlassUnicorn/lib/gkl/gkl_led.pretty)(options "")(descr ""))
+  (lib (name gkl_conn)(type KiCad)(uri /home/greg/projects/GlassUnicorn/lib/gkl/gkl_conn.pretty)(options "")(descr ""))
+  (lib (name gkl_misc)(type KiCad)(uri /home/greg/projects/GlassUnicorn/lib/gkl/gkl_misc.pretty)(options "")(descr ""))
+)
