@@ -400,7 +400,8 @@ class d20_r0_1_sch():
         swdio, swdclk, swo, swdrst = Net('swdio'),Net('swdclk'),Net('swo'),Net('samd_rst')
 
         con_swd = d_con_10P_2x5()
-        con_swd[1,3,5,7,9] += gnd
+        con_swd[3,5,7,9] += gnd
+        con_swd[1] += pp3v3
         con_swd[2] += swdio
         con_swd[4] += swdclk
         con_swd[6] += swo
