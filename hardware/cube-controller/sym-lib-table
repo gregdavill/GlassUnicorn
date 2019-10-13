@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name gkl_misc)(type Legacy)(uri /home/greg/projects/GlassUnicorn/lib/gkl/gkl_misc.lib)(options "")(descr ""))
+  (lib (name gkl_pmic)(type Legacy)(uri /home/greg/projects/GlassUnicorn/lib/gkl/gkl_pmic.lib)(options "")(descr ""))
+  (lib (name gkl_mem)(type Legacy)(uri /home/greg/projects/GlassUnicorn/lib/gkl/gkl_mem.lib)(options "")(descr ""))
+)

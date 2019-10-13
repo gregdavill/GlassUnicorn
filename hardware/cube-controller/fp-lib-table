@@ -1,0 +1,8 @@
+(fp_lib_table
+  (lib (name gkl_led)(type KiCad)(uri /home/greg/projects/GlassUnicorn/lib/gkl/gkl_led.pretty)(options "")(descr ""))
+  (lib (name gkl_conn)(type KiCad)(uri /home/greg/projects/GlassUnicorn/lib/gkl/gkl_conn.pretty)(options "")(descr ""))
+  (lib (name gkl_misc)(type KiCad)(uri /home/greg/projects/GlassUnicorn/lib/gkl/gkl_misc.pretty)(options "")(descr ""))
+  (lib (name gkl_housings_son)(type KiCad)(uri /home/greg/projects/GlassUnicorn/lib/gkl/gkl_housings_son.pretty)(options "")(descr ""))
+  (lib (name gkl_housings_dfn)(type KiCad)(uri /home/greg/projects/GlassUnicorn/lib/gkl/gkl_housings_dfn.pretty)(options "")(descr ""))
+  (lib (name gkl_housings_qfn)(type KiCad)(uri /home/greg/projects/GlassUnicorn/lib/gkl/gkl_housings_qfn.pretty)(options "")(descr ""))
+)
