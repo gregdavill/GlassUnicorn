@@ -3,11 +3,10 @@ from skidl import Pin, Part, Alias, SchLib, SKIDL, TEMPLATE
 SKIDL_lib_version = '0.0.1'
 
 cube_controller_lib = SchLib(tool=SKIDL).add_parts(*[
-        Part(**{ 'name':'Conn_01x03', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'Conn_01x03', 'description':'Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)', 'keywords':'connector', 'F0':'J', 'datasheet':'~', 'ref_prefix':'J', 'num_units':1, 'fplist':['Connector*:*_1x??_*'], 'do_erc':True, 'footprint':'gkl_conn:3P_Battery_Connector', 'pins':[
+        Part(**{ 'name':'Conn_01x02', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'Conn_01x02', 'Manf':'JST Sales America Inc.', 'keywords':'connector', 'datasheet':'~', 'F0':'J', 'description':'Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)', 'PN':'S02B-PASK-2(LF)(SN)', 'ref_prefix':'J', 'num_units':1, 'fplist':['Connector*:*_1x??_*'], 'do_erc':True, 'footprint':'gkl_conn:SB02B-PASK-2', 'pins':[
             Pin(num='1',name='Pin_1',func=Pin.types.PASSIVE,do_erc=True),
-            Pin(num='2',name='Pin_2',func=Pin.types.PASSIVE,do_erc=True),
-            Pin(num='3',name='Pin_3',func=Pin.types.PASSIVE,do_erc=True)] }),
-        Part(**{ 'name':'LTC4367', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'LTC4367', 'F0':'U', 'ref_prefix':'U', 'num_units':1, 'do_erc':True, 'footprint':'Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.5mm_EP1.66x2.38mm', 'pins':[
+            Pin(num='2',name='Pin_2',func=Pin.types.PASSIVE,do_erc=True)] }),
+        Part(**{ 'name':'LTC4367', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'LTC4367', 'Manf':'Linear Technology/Analog Devices', 'F0':'U', 'PN':'LTC4367IDD#PBF', 'ref_prefix':'U', 'num_units':1, 'do_erc':True, 'footprint':'Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.5mm_EP1.66x2.38mm', 'pins':[
             Pin(num='1',name='VIN',func=Pin.types.INPUT,do_erc=True),
             Pin(num='2',name='UV',func=Pin.types.INPUT,do_erc=True),
             Pin(num='3',name='OV',func=Pin.types.INPUT,do_erc=True),
@@ -16,17 +15,17 @@ cube_controller_lib = SchLib(tool=SKIDL).add_parts(*[
             Pin(num='6',name='~FAULT',func=Pin.types.INPUT,do_erc=True),
             Pin(num='7',name='VOUT',func=Pin.types.INPUT,do_erc=True),
             Pin(num='8',name='GATE',func=Pin.types.INPUT,do_erc=True)] }),
-        Part(**{ 'name':'AON7804', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'AON7804', 'F0':'U', 'ref_prefix':'U', 'num_units':1, 'do_erc':True, 'footprint':'gkl_housings_dfn:DFN3X3_8L_EP2_P', 'pins':[
+        Part(**{ 'name':'AON7804', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'AON7804', 'Manf':'Alpha / Omega Semiconductor Inc.', 'F0':'U', 'PN':'AON7804', 'ref_prefix':'U', 'num_units':1, 'do_erc':True, 'footprint':'gkl_housings_dfn:DFN3X3_8L_EP2_P', 'pins':[
             Pin(num='1',name='D',func=Pin.types.PASSIVE,do_erc=True),
             Pin(num='2',name='S',func=Pin.types.PASSIVE,do_erc=True),
             Pin(num='3',name='G',func=Pin.types.INPUT,do_erc=True),
             Pin(num='4',name='D',func=Pin.types.PASSIVE,do_erc=True),
             Pin(num='5',name='S',func=Pin.types.PASSIVE,do_erc=True),
             Pin(num='6',name='G',func=Pin.types.INPUT,do_erc=True)] }),
-        Part(**{ 'name':'R', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'R', 'description':'Resistor', 'keywords':'R res resistor', 'F0':'R', 'datasheet':'~', 'ref_prefix':'R', 'num_units':1, 'fplist':['R_*'], 'do_erc':True, 'footprint':'Resistor_SMD:R_0402_1005Metric', 'pins':[
+        Part(**{ 'name':'R', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'R', 'Manf':'Yageo', 'keywords':'R res resistor', 'datasheet':'~', 'F0':'R', 'description':'Resistor', 'PN':'RC0402FR-07510KL', 'ref_prefix':'R', 'num_units':1, 'fplist':['R_*'], 'do_erc':True, 'footprint':'Resistor_SMD:R_0402_1005Metric', 'pins':[
             Pin(num='1',name='~',func=Pin.types.PASSIVE,do_erc=True),
             Pin(num='2',name='~',func=Pin.types.PASSIVE,do_erc=True)] }),
-        Part(**{ 'name':'TPS62135', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'TPS62135', 'F0':'U', 'ref_prefix':'U', 'num_units':1, 'do_erc':True, 'footprint':'gkl_misc:VQFN-11_3x2mm_P0.5mm', 'pins':[
+        Part(**{ 'name':'TPS62135', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'TPS62135', 'Manf':'Texas Instruments', 'F0':'U', 'PN':'TPS621351RGXR', 'ref_prefix':'U', 'num_units':1, 'do_erc':True, 'footprint':'gkl_misc:VQFN-11_3x2mm_P0.5mm', 'pins':[
             Pin(num='1',name='VIN',func=Pin.types.PWRIN,do_erc=True),
             Pin(num='10',name='MODE',func=Pin.types.INPUT,do_erc=True),
             Pin(num='11',name='VSEL',func=Pin.types.INPUT,do_erc=True),
@@ -38,41 +37,41 @@ cube_controller_lib = SchLib(tool=SKIDL).add_parts(*[
             Pin(num='7',name='PG',func=Pin.types.OUTPUT,do_erc=True),
             Pin(num='8',name='EN',func=Pin.types.INPUT,do_erc=True),
             Pin(num='9',name='SS/TR',func=Pin.types.INPUT,do_erc=True)] }),
-        Part(**{ 'name':'L', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'L', 'description':'Inductor', 'keywords':'inductor choke coil reactor magnetic', 'F0':'L', 'datasheet':'~', 'ref_prefix':'L', 'num_units':1, 'fplist':['Choke_*', '*Coil*', 'Inductor_*', 'L_*'], 'do_erc':True, 'footprint':'Inductor_SMD:L_Coilcraft_XxL4020', 'pins':[
+        Part(**{ 'name':'L', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'L', 'Manf':'Wurth Electronics Inc.', 'keywords':'inductor choke coil reactor magnetic', 'datasheet':'~', 'F0':'L', 'description':'Inductor', 'PN':'78438357010', 'ref_prefix':'L', 'num_units':1, 'fplist':['Choke_*', '*Coil*', 'Inductor_*', 'L_*'], 'do_erc':True, 'footprint':'Inductor_SMD:L_Coilcraft_XxL4020', 'pins':[
             Pin(num='1',name='1',func=Pin.types.PASSIVE,do_erc=True),
             Pin(num='2',name='2',func=Pin.types.PASSIVE,do_erc=True)] }),
-        Part(**{ 'name':'C', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'C', 'description':'Unpolarized capacitor', 'keywords':'cap capacitor', 'F0':'C', 'datasheet':'~', 'ref_prefix':'C', 'num_units':1, 'fplist':['C_*'], 'do_erc':True, 'footprint':'Capacitor_SMD:C_0603_1608Metric', 'pins':[
+        Part(**{ 'name':'C', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'C', 'Manf':'Murata Electronics', 'keywords':'cap capacitor', 'datasheet':'~', 'F0':'C', 'description':'Unpolarized capacitor', 'PN':'GRM188R61C106MAALD', 'ref_prefix':'C', 'num_units':1, 'fplist':['C_*'], 'do_erc':True, 'footprint':'Capacitor_SMD:C_0603_1608Metric', 'pins':[
             Pin(num='1',name='~',func=Pin.types.PASSIVE,do_erc=True),
             Pin(num='2',name='~',func=Pin.types.PASSIVE,do_erc=True)] }),
-        Part(**{ 'name':'TPS561201', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'TPS561201', 'F0':'U', 'ref_prefix':'U', 'num_units':1, 'do_erc':True, 'footprint':'Package_TO_SOT_SMD:TSOT-23-6', 'pins':[
+        Part(**{ 'name':'TPS561201', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'TPS561201', 'Manf':'Texas Instruments', 'F0':'U', 'PN':'TPS561201DDCT', 'ref_prefix':'U', 'num_units':1, 'do_erc':True, 'footprint':'Package_TO_SOT_SMD:TSOT-23-6', 'pins':[
             Pin(num='1',name='GND',func=Pin.types.PWRIN,do_erc=True),
             Pin(num='2',name='SW',func=Pin.types.PWROUT,do_erc=True),
             Pin(num='3',name='VIN',func=Pin.types.PWRIN,do_erc=True),
             Pin(num='4',name='VFB',func=Pin.types.INPUT,do_erc=True),
             Pin(num='5',name='EN',func=Pin.types.INPUT,do_erc=True),
             Pin(num='6',name='VBST',func=Pin.types.INPUT,do_erc=True)] }),
-        Part(**{ 'name':'NP115-2.5', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'NCP167', 'F0':'U', 'F3':'http://www.onsemi.com/pub/Collateral/NCP167-D.PDF', 'ref_prefix':'U', 'num_units':1, 'do_erc':True, 'footprint':'gkl_housings_son:X2SON_4_1.0x1.0mm', 'pins':[
+        Part(**{ 'name':'NP115-2.5', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'NCP167', 'Manf':'ON Semiconductor', 'F0':'U', 'F3':'http://www.onsemi.com/pub/Collateral/NCP167-D.PDF', 'PN':'NCP115CMX250TCG', 'ref_prefix':'U', 'num_units':1, 'do_erc':True, 'footprint':'gkl_housings_son:X2SON_4_1.0x1.0mm', 'pins':[
             Pin(num='1',name='OUT',func=Pin.types.INPUT,do_erc=True),
             Pin(num='2',name='GND',func=Pin.types.INPUT,do_erc=True),
             Pin(num='3',name='EN',func=Pin.types.INPUT,do_erc=True),
             Pin(num='4',name='IN',func=Pin.types.INPUT,do_erc=True)] }),
-        Part(**{ 'name':'NP115-1.2', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'NCP167', 'F0':'U', 'F3':'http://www.onsemi.com/pub/Collateral/NCP167-D.PDF', 'ref_prefix':'U', 'num_units':1, 'do_erc':True, 'footprint':'gkl_housings_son:X2SON_4_1.0x1.0mm', 'pins':[
+        Part(**{ 'name':'NP115-1.2', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'NCP167', 'Manf':'ON Semiconductor', 'F0':'U', 'F3':'http://www.onsemi.com/pub/Collateral/NCP167-D.PDF', 'PN':'NCP115AMX120TCG', 'ref_prefix':'U', 'num_units':1, 'do_erc':True, 'footprint':'gkl_housings_son:X2SON_4_1.0x1.0mm', 'pins':[
             Pin(num='1',name='OUT',func=Pin.types.INPUT,do_erc=True),
             Pin(num='2',name='GND',func=Pin.types.INPUT,do_erc=True),
             Pin(num='3',name='EN',func=Pin.types.INPUT,do_erc=True),
             Pin(num='4',name='IN',func=Pin.types.INPUT,do_erc=True)] }),
-        Part(**{ 'name':'Ferrite_Bead_Small', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'Ferrite_Bead_Small', 'description':'Ferrite bead, small symbol', 'keywords':'L ferrite bead inductor filter', 'F0':'FB', 'datasheet':'~', 'ref_prefix':'FB', 'num_units':1, 'fplist':['Inductor_*', 'L_*', '*Ferrite*'], 'do_erc':True, 'footprint':'Inductor_SMD:L_0402_1005Metric', 'pins':[
+        Part(**{ 'name':'Ferrite_Bead_Small', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'Ferrite_Bead_Small', 'Manf':'Taiyo Yuden', 'keywords':'L ferrite bead inductor filter', 'datasheet':'~', 'F0':'FB', 'description':'Ferrite bead, small symbol', 'PN':'BK1005HS102-T', 'ref_prefix':'FB', 'num_units':1, 'fplist':['Inductor_*', 'L_*', '*Ferrite*'], 'do_erc':True, 'footprint':'Inductor_SMD:L_0402_1005Metric', 'pins':[
             Pin(num='1',name='~',func=Pin.types.PASSIVE,do_erc=True),
             Pin(num='2',name='~',func=Pin.types.PASSIVE,do_erc=True)] }),
-        Part(**{ 'name':'CP1', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'CP1', 'description':'Polarized capacitor, US symbol', 'keywords':'cap capacitor', 'F0':'C', 'datasheet':'~', 'ref_prefix':'C', 'num_units':1, 'fplist':['CP_*'], 'do_erc':True, 'footprint':'Capacitor_SMD:CP_Elec_5x3.9', 'pins':[
+        Part(**{ 'name':'CP1', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'CP1', 'Manf':'Nichicon', 'keywords':'cap capacitor', 'datasheet':'~', 'F0':'C', 'description':'Polarized capacitor, US symbol', 'PN':'UWX1C101MCL1GB', 'ref_prefix':'C', 'num_units':1, 'fplist':['CP_*'], 'do_erc':True, 'footprint':'Capacitor_SMD:CP_Elec_5x3.9', 'pins':[
             Pin(num='1',name='~',func=Pin.types.PASSIVE,do_erc=True),
             Pin(num='2',name='~',func=Pin.types.PASSIVE,do_erc=True)] }),
-        Part(**{ 'name':'LED_ARGB', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'LED_ARGB', 'description':'RGB LED, anode/red/green/blue', 'keywords':'LED RGB diode', 'F0':'D', 'datasheet':'~', 'ref_prefix':'D', 'num_units':1, 'fplist':['LED*', 'LED_SMD:*', 'LED_THT:*'], 'do_erc':True, 'footprint':'gkl_led:led_rbag_1515', 'pins':[
+        Part(**{ 'name':'LED_ARGB', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'LED_ARGB', 'Manf':'Meihua', 'keywords':'LED RGB diode', 'datasheet':'~', 'F0':'D', 'description':'RGB LED, anode/red/green/blue', 'PN':'MHPA1515RGBDT', 'ref_prefix':'D', 'num_units':1, 'fplist':['LED*', 'LED_SMD:*', 'LED_THT:*'], 'do_erc':True, 'footprint':'gkl_led:led_rbag_1515', 'pins':[
             Pin(num='1',name='A',func=Pin.types.PASSIVE,do_erc=True),
             Pin(num='2',name='RK',func=Pin.types.PASSIVE,do_erc=True),
             Pin(num='3',name='GK',func=Pin.types.PASSIVE,do_erc=True),
             Pin(num='4',name='BK',func=Pin.types.PASSIVE,do_erc=True)] }),
-        Part(**{ 'name':'ATSAMD51G19A', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'ATSAMD51G19A', 'F0':'U', 'ref_prefix':'U', 'num_units':1, 'do_erc':True, 'footprint':'Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.15x5.15mm', 'pins':[
+        Part(**{ 'name':'ATSAMD51G19A', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'ATSAMD51G19A', 'Manf':'Microchip Technology', 'F0':'U', 'PN':'ATSAMD51G19A-MF', 'ref_prefix':'U', 'num_units':1, 'do_erc':True, 'footprint':'Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.15x5.15mm', 'pins':[
             Pin(num='1',name='PA00',func=Pin.types.INPUT,do_erc=True),
             Pin(num='10',name='PA05',func=Pin.types.INPUT,do_erc=True),
             Pin(num='11',name='PA06',func=Pin.types.INPUT,do_erc=True),
@@ -122,10 +121,10 @@ cube_controller_lib = SchLib(tool=SKIDL).add_parts(*[
             Pin(num='7',name='PB08',func=Pin.types.INPUT,do_erc=True),
             Pin(num='8',name='PB09',func=Pin.types.INPUT,do_erc=True),
             Pin(num='9',name='PA04',func=Pin.types.INPUT,do_erc=True)] }),
-        Part(**{ 'name':'Crystal', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'Crystal', 'description':'Two pin crystal', 'keywords':'quartz ceramic resonator oscillator', 'F0':'Y', 'datasheet':'~', 'ref_prefix':'Y', 'num_units':1, 'fplist':['Crystal*'], 'do_erc':True, 'footprint':'Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm', 'pins':[
+        Part(**{ 'name':'Crystal', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'Crystal', 'Manf':'ECS Inc.', 'keywords':'quartz ceramic resonator oscillator', 'datasheet':'~', 'F0':'Y', 'description':'Two pin crystal', 'PN':'ECS-.327-9-12R-C-TR', 'ref_prefix':'Y', 'num_units':1, 'fplist':['Crystal*'], 'do_erc':True, 'footprint':'Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm', 'pins':[
             Pin(num='1',name='1',func=Pin.types.PASSIVE,do_erc=True),
             Pin(num='2',name='2',func=Pin.types.PASSIVE,do_erc=True)] }),
-        Part(**{ 'name':'ICE40UP5K-SG48ITR', 'dest':TEMPLATE, 'tool':SKIDL, 'F2':'Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm', 'F1':'ICE40UP5K-SG48ITR', 'description':'iCE40 UltraPlus FPGA, 5280 LUTs, 1.2V, 48-pin QFN', 'keywords':'FPGA programmable logic', 'F0':'U', 'datasheet':'http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra', 'ref_prefix':'U', 'num_units':4, 'fplist':['QFN*7x7mm*P0.5mm*EP5.6x5.6mm*'], 'do_erc':True, 'footprint':'Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.15x5.15mm', 'pins':[
+        Part(**{ 'name':'ICE40UP5K-SG48ITR', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'ICE40UP5K-SG48ITR', 'Manf':'Lattice Semiconductor Corporation', 'keywords':'FPGA programmable logic', 'datasheet':'http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra', 'F0':'U', 'description':'iCE40 UltraPlus FPGA, 5280 LUTs, 1.2V, 48-pin QFN', 'PN':'ICE40UP5K-SG48I', 'F2':'Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm', 'ref_prefix':'U', 'num_units':4, 'fplist':['QFN*7x7mm*P0.5mm*EP5.6x5.6mm*'], 'do_erc':True, 'footprint':'Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.15x5.15mm', 'pins':[
             Pin(num='23',name='IOT_37a',func=Pin.types.BIDIR,do_erc=True),
             Pin(num='25',name='IOT_36b',func=Pin.types.BIDIR,do_erc=True),
             Pin(num='26',name='IOT_39a',func=Pin.types.BIDIR,do_erc=True),
@@ -175,7 +174,7 @@ cube_controller_lib = SchLib(tool=SKIDL).add_parts(*[
             Pin(num='30',name='VCC',func=Pin.types.PASSIVE,do_erc=True),
             Pin(num='49',name='GND',func=Pin.types.PWRIN,do_erc=True),
             Pin(num='5',name='VCC',func=Pin.types.PWRIN,do_erc=True)] }),
-        Part(**{ 'name':'SN74AVC8T245PW', 'dest':TEMPLATE, 'tool':SKIDL, 'F2':'Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm', 'F1':'SN74AVC8T245PW', 'description':'8-Bit Dual-Supply Bus Transceiver With Configurable Voltage Translation and 3-State Outputs, TSSOP-24', 'keywords':'Noninverting Bidirectional', 'F0':'U', 'datasheet':'https://www.ti.com/lit/ds/symlink/sn74avc8t245.pdf', 'ref_prefix':'U', 'num_units':1, 'fplist':['TSSOP*4.4x7.8mm*P0.65mm*'], 'do_erc':True, 'footprint':'Package_DFN_QFN:Texas_RGY_R-PVQFN-N24_EP2.05x3.1mm', 'pins':[
+        Part(**{ 'name':'SN74AVC8T245PW', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'SN74AVC8T245PW', 'Manf':'Texas Instruments', 'keywords':'Noninverting Bidirectional', 'datasheet':'https://www.ti.com/lit/ds/symlink/sn74avc8t245.pdf', 'F0':'U', 'description':'8-Bit Dual-Supply Bus Transceiver With Configurable Voltage Translation and 3-State Outputs, TSSOP-24', 'PN':'SN74AVC8T245RHLR', 'F2':'Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm', 'ref_prefix':'U', 'num_units':1, 'fplist':['TSSOP*4.4x7.8mm*P0.65mm*'], 'do_erc':True, 'footprint':'Package_DFN_QFN:Texas_RGY_R-PVQFN-N24_EP2.05x3.1mm', 'pins':[
             Pin(num='1',name='VCCA',func=Pin.types.PWRIN,do_erc=True),
             Pin(num='10',name='A8',func=Pin.types.BIDIR,do_erc=True),
             Pin(num='11',name='GND',func=Pin.types.PWRIN,do_erc=True),
@@ -200,7 +199,7 @@ cube_controller_lib = SchLib(tool=SKIDL).add_parts(*[
             Pin(num='7',name='A5',func=Pin.types.BIDIR,do_erc=True),
             Pin(num='8',name='A6',func=Pin.types.BIDIR,do_erc=True),
             Pin(num='9',name='A7',func=Pin.types.BIDIR,do_erc=True)] }),
-        Part(**{ 'name':'Conn_01x20_Shielded', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'Conn_01x20_Shielded', 'description':'Generic shielded connector, single row, 01x20, script generated (kicad-library-utils/schlib/autogen/connector/)', 'keywords':'connector', 'F0':'J', 'datasheet':'~', 'ref_prefix':'J', 'num_units':1, 'fplist':['Connector*:*_1x??-1SH*'], 'do_erc':True, 'footprint':'gkl_conn:FH12-20S-0.5SVA(54)', 'pins':[
+        Part(**{ 'name':'Conn_01x20_Shielded', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'Conn_01x20_Shielded', 'Manf':'Hirose Electric Co Ltd', 'keywords':'connector', 'datasheet':'~', 'F0':'J', 'description':'Generic shielded connector, single row, 01x20, script generated (kicad-library-utils/schlib/autogen/connector/)', 'PN':'FH12-20S-0.5SVA(54)', 'ref_prefix':'J', 'num_units':1, 'fplist':['Connector*:*_1x??-1SH*'], 'do_erc':True, 'footprint':'gkl_conn:FH12-20S-0.5SVA(54)', 'pins':[
             Pin(num='1',name='Pin_1',func=Pin.types.PASSIVE,do_erc=True),
             Pin(num='10',name='Pin_10',func=Pin.types.PASSIVE,do_erc=True),
             Pin(num='11',name='Pin_11',func=Pin.types.PASSIVE,do_erc=True),
@@ -222,7 +221,7 @@ cube_controller_lib = SchLib(tool=SKIDL).add_parts(*[
             Pin(num='8',name='Pin_8',func=Pin.types.PASSIVE,do_erc=True),
             Pin(num='9',name='Pin_9',func=Pin.types.PASSIVE,do_erc=True),
             Pin(num='SH',name='Shield',func=Pin.types.PASSIVE,do_erc=True)] }),
-        Part(**{ 'name':'Conn_02x05_Odd_Even', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'Conn_02x05_Odd_Even', 'description':'Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)', 'keywords':'connector', 'F0':'J', 'datasheet':'~', 'ref_prefix':'J', 'num_units':1, 'fplist':['Connector*:*_2x??_*'], 'do_erc':True, 'footprint':'gkl_conn:FTSH-105-XX-X-DV', 'pins':[
+        Part(**{ 'name':'Conn_02x05_Odd_Even', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'Conn_02x05_Odd_Even', 'Manf':'Samtec Inc.', 'keywords':'connector', 'datasheet':'~', 'F0':'J', 'description':'Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)', 'PN':'FTSH-105-01-F-DV-K-TR', 'ref_prefix':'J', 'num_units':1, 'fplist':['Connector*:*_2x??_*'], 'do_erc':True, 'footprint':'gkl_conn:FTSH-105-XX-X-DV', 'pins':[
             Pin(num='1',name='Pin_1',func=Pin.types.PASSIVE,do_erc=True),
             Pin(num='10',name='Pin_10',func=Pin.types.PASSIVE,do_erc=True),
             Pin(num='2',name='Pin_2',func=Pin.types.PASSIVE,do_erc=True),
@@ -233,7 +232,7 @@ cube_controller_lib = SchLib(tool=SKIDL).add_parts(*[
             Pin(num='7',name='Pin_7',func=Pin.types.PASSIVE,do_erc=True),
             Pin(num='8',name='Pin_8',func=Pin.types.PASSIVE,do_erc=True),
             Pin(num='9',name='Pin_9',func=Pin.types.PASSIVE,do_erc=True)] }),
-        Part(**{ 'name':'BMX160', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'BMX160', 'F0':'U', 'ref_prefix':'U', 'num_units':1, 'do_erc':True, 'footprint':'Package_LGA:Bosch_LGA-14_3x2.5mm_P0.5mm', 'pins':[
+        Part(**{ 'name':'BMX160', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'BMX160', 'Manf':'Bosch Sensortec', 'F0':'U', 'PN':'BMX160', 'ref_prefix':'U', 'num_units':1, 'do_erc':True, 'footprint':'Package_LGA:Bosch_LGA-14_3x2.5mm_P0.5mm', 'pins':[
             Pin(num='1',name='SDO',func=Pin.types.BIDIR,do_erc=True),
             Pin(num='10',name='NC',func=Pin.types.INPUT,do_erc=True),
             Pin(num='11',name='NC',func=Pin.types.INPUT,do_erc=True),
@@ -248,7 +247,7 @@ cube_controller_lib = SchLib(tool=SKIDL).add_parts(*[
             Pin(num='7',name='GND',func=Pin.types.PWRIN,do_erc=True),
             Pin(num='8',name='VDD',func=Pin.types.PWRIN,do_erc=True),
             Pin(num='9',name='INT2',func=Pin.types.BIDIR,do_erc=True)] }),
-        Part(**{ 'name':'AT25SF081', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'AT25SF081', 'F0':'U', 'ref_prefix':'U', 'num_units':1, 'do_erc':True, 'footprint':'Package_SO:SOIC-8_5.23x5.23mm_P1.27mm', 'pins':[
+        Part(**{ 'name':'AT25SF081', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'AT25SF081', 'Manf':'Winbond Electronics', 'F0':'U', 'PN':'W25Q128JVSIM TR', 'ref_prefix':'U', 'num_units':1, 'do_erc':True, 'footprint':'Package_SO:SOIC-8_5.23x5.23mm_P1.27mm', 'pins':[
             Pin(num='1',name='~CS',func=Pin.types.INPUT,do_erc=True),
             Pin(num='2',name='SO',func=Pin.types.INPUT,do_erc=True),
             Pin(num='3',name='~WP',func=Pin.types.INPUT,do_erc=True),
@@ -257,7 +256,7 @@ cube_controller_lib = SchLib(tool=SKIDL).add_parts(*[
             Pin(num='6',name='SCK',func=Pin.types.INPUT,do_erc=True),
             Pin(num='7',name='~HOLD',func=Pin.types.INPUT,do_erc=True),
             Pin(num='8',name='VCC',func=Pin.types.INPUT,do_erc=True)] }),
-        Part(**{ 'name':'USB_C_Receptacle_USB2.0', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'USB_C_Receptacle_USB2.0', 'description':'USB 2.0-only Type-C Receptacle connector', 'keywords':'usb universal serial bus type-C USB2.0', 'F0':'J', 'datasheet':'https://www.usb.org/sites/default/files/documents/usb_type-c.zip', 'ref_prefix':'J', 'num_units':1, 'fplist':['USB*C*Receptacle*'], 'do_erc':True, 'footprint':'Connector_USB:USB_C_Receptacle_Palconn_UTC16-G', 'pins':[
+        Part(**{ 'name':'USB_C_Receptacle_USB2.0', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'USB_C_Receptacle_USB2.0', 'Manf':'Hirose Electric Co Ltd', 'keywords':'usb universal serial bus type-C USB2.0', 'datasheet':'https://www.usb.org/sites/default/files/documents/usb_type-c.zip', 'F0':'J', 'description':'USB 2.0-only Type-C Receptacle connector', 'PN':'CX90M-16P', 'ref_prefix':'J', 'num_units':1, 'fplist':['USB*C*Receptacle*'], 'do_erc':True, 'footprint':'Connector_USB:USB_C_Receptacle_Palconn_UTC16-G', 'pins':[
             Pin(num='A1',name='GND',func=Pin.types.PWRIN,do_erc=True),
             Pin(num='A12',name='GND',func=Pin.types.PASSIVE,do_erc=True),
             Pin(num='A4',name='VBUS',func=Pin.types.PWRIN,do_erc=True),
@@ -275,10 +274,10 @@ cube_controller_lib = SchLib(tool=SKIDL).add_parts(*[
             Pin(num='B8',name='SBU2',func=Pin.types.BIDIR,do_erc=True),
             Pin(num='B9',name='VBUS',func=Pin.types.PASSIVE,do_erc=True),
             Pin(num='S1',name='SHIELD',func=Pin.types.PASSIVE,do_erc=True)] }),
-        Part(**{ 'name':'SW_Push', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'SW_Push', 'description':'Push button switch, generic, two pins', 'keywords':'switch normally-open pushbutton push-button', 'F0':'SW', 'datasheet':'~', 'ref_prefix':'SW', 'num_units':1, 'do_erc':True, 'footprint':'gkl_misc:EVQP4', 'pins':[
+        Part(**{ 'name':'SW_Push', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'SW_Push', 'Manf':'Panasonic Electronic Components', 'keywords':'switch normally-open pushbutton push-button', 'datasheet':'~', 'F0':'SW', 'description':'Push button switch, generic, two pins', 'PN':'EVQ-P42B3M', 'ref_prefix':'SW', 'num_units':1, 'do_erc':True, 'footprint':'gkl_misc:EVQP4', 'pins':[
             Pin(num='1',name='1',func=Pin.types.PASSIVE,do_erc=True),
             Pin(num='2',name='2',func=Pin.types.PASSIVE,do_erc=True)] }),
-        Part(**{ 'name':'LTC4413-2', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'LTC4413-2', 'F0':'U', 'ref_prefix':'U', 'num_units':1, 'do_erc':True, 'footprint':'Package_DFN_QFN:DFN-10-1EP_3x3mm_P0.5mm_EP1.65x2.38mm', 'pins':[
+        Part(**{ 'name':'LTC4413-2', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'LTC4413-2', 'Manf':'Linear Technology/Analog Devices', 'F0':'U', 'PN':'LTC4413EDD-1#PBF', 'ref_prefix':'U', 'num_units':1, 'do_erc':True, 'footprint':'Package_DFN_QFN:DFN-10-1EP_3x3mm_P0.5mm_EP1.65x2.38mm', 'pins':[
             Pin(num='1',name='INA',func=Pin.types.INPUT,do_erc=True),
             Pin(num='10',name='OUTA',func=Pin.types.INPUT,do_erc=True),
             Pin(num='11',name='SGND',func=Pin.types.INPUT,do_erc=True),
@@ -290,6 +289,6 @@ cube_controller_lib = SchLib(tool=SKIDL).add_parts(*[
             Pin(num='7',name='OVP',func=Pin.types.INPUT,do_erc=True),
             Pin(num='8',name='OVI',func=Pin.types.INPUT,do_erc=True),
             Pin(num='9',name='STAT',func=Pin.types.INPUT,do_erc=True)] }),
-        Part(**{ 'name':'5.1k', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'R', 'description':'Resistor', 'keywords':'R res resistor', 'F0':'R', 'datasheet':'~', 'ref_prefix':'R', 'num_units':1, 'fplist':['R_*'], 'do_erc':True, 'footprint':'Resistor_SMD:R_0402_1005Metric', 'pins':[
+        Part(**{ 'name':'5.1k', 'dest':TEMPLATE, 'tool':SKIDL, 'F1':'R', 'Manf':'Yageo', 'keywords':'R res resistor', 'datasheet':'~', 'F0':'R', 'description':'Resistor', 'PN':'RC0402FR-075K1L', 'ref_prefix':'R', 'num_units':1, 'fplist':['R_*'], 'do_erc':True, 'footprint':'Resistor_SMD:R_0402_1005Metric', 'pins':[
             Pin(num='1',name='~',func=Pin.types.PASSIVE,do_erc=True),
             Pin(num='2',name='~',func=Pin.types.PASSIVE,do_erc=True)] })])

@@ -25,47 +25,47 @@ class d20_r0_1_sch():
         # Component templates.
         #===============================================================================
 
-        output_connector = Part('Connector_Generic_Shielded', 'Conn_01x20_Shielded', dest=TEMPLATE, footprint='gkl_conn:FH12-20S-0.5SVA(54)')
-        d_74lvc8t245 = Part('Logic_LevelTranslator', 'SN74AVC8T245PW', dest=TEMPLATE, footprint='Package_DFN_QFN:Texas_RGY_R-PVQFN-N24_EP2.05x3.1mm')
+        output_connector = Part('Connector_Generic_Shielded', 'Conn_01x20_Shielded', dest=TEMPLATE, footprint='gkl_conn:FH12-20S-0.5SVA(54)', PN='FH12-20S-0.5SVA(54)', Manf='Hirose Electric Co Ltd')
+        d_74lvc8t245 = Part('Logic_LevelTranslator', 'SN74AVC8T245PW', dest=TEMPLATE, footprint='Package_DFN_QFN:Texas_RGY_R-PVQFN-N24_EP2.05x3.1mm', PN='SN74AVC8T245RHLR', Manf='Texas Instruments')
         
-        samd51 = Part('gkl_microchip', 'ATSAMD51G19A', dest=TEMPLATE, footprint='Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.15x5.15mm')
-        c_100uF = Part('Device', 'CP1', dest=TEMPLATE, footprint='Capacitor_SMD:CP_Elec_5x3.9')
-        c_100nF = Part('Device', 'C', dest=TEMPLATE, footprint='Capacitor_SMD:C_0402_1005Metric', value='100nF')
+        samd51 = Part('gkl_microchip', 'ATSAMD51G19A', dest=TEMPLATE, footprint='Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.15x5.15mm', PN='ATSAMD51G19A-MF', Manf='Microchip Technology')
+        c_100uF = Part('Device', 'CP1', dest=TEMPLATE, footprint='Capacitor_SMD:CP_Elec_5x3.9', PN='UWX1C101MCL1GB', Manf='Nichicon')
+        c_100nF = Part('Device', 'C', dest=TEMPLATE, footprint='Capacitor_SMD:C_0402_1005Metric', value='100nF', PN='CL05B104KP5NNNC', Manf='Samsung Electro-Mechanics')
         cap = Part('Device', 'C', dest=TEMPLATE, footprint='Capacitor_SMD:C_0402_1005Metric')
-        rgb = Part('Device', 'LED_ARGB', dest=TEMPLATE, footprint='gkl_led:led_rbag_1515')
+        rgb = Part('Device', 'LED_ARGB', dest=TEMPLATE, footprint='gkl_led:led_rbag_1515', PN='MHPA1515RGBDT', Manf='Meihua')
         res = Part('Device', 'R', dest=TEMPLATE, footprint='Resistor_SMD:R_0402_1005Metric')
 
-        ice40up5k = Part('FPGA_Lattice', 'ICE40UP5K-SG48ITR', dest=TEMPLATE, footprint='Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.15x5.15mm')
+        ice40up5k = Part('FPGA_Lattice', 'ICE40UP5K-SG48ITR', dest=TEMPLATE, footprint='Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.15x5.15mm', PN='ICE40UP5K-SG48I', Manf='Lattice Semiconductor Corporation')
     
-        d_tps62135 = Part('gkl_misc', 'TPS62135', dest=TEMPLATE, footprint='gkl_misc:VQFN-11_3x2mm_P0.5mm')
-        d_cap_10uf_16V_0603 = Part('Device', 'C', dest=TEMPLATE, footprint='Capacitor_SMD:C_0603_1608Metric', value='10uF')
-        d_cap_1uf_6_3V_0402 = Part('Device', 'C', dest=TEMPLATE, footprint='Capacitor_SMD:C_0402_1005Metric', value='1uF')
-        d_inductor_1uH = Part('Device', 'L', dest=TEMPLATE, footprint='Inductor_SMD:L_Coilcraft_XxL4020', value='1uH')
-        d_inductor_2_2uH = Part('Device', 'L', dest=TEMPLATE, footprint='Inductor_SMD:L_0805_2012Metric', value='2.2uH')
-        d_inductor_10uH = Part('Device', 'L', dest=TEMPLATE, footprint='Inductor_SMD:L_0805_2012Metric', value='10uH')
+        d_tps62135 = Part('gkl_misc', 'TPS62135', dest=TEMPLATE, footprint='gkl_misc:VQFN-11_3x2mm_P0.5mm', PN='TPS621351RGXR', Manf='Texas Instruments')
+        d_cap_10uf_16V_0603 = Part('Device', 'C', dest=TEMPLATE, footprint='Capacitor_SMD:C_0603_1608Metric', value='10uF', PN='GRM188R61C106MAALD', Manf='Murata Electronics')
+        d_cap_1uf_6_3V_0402 = Part('Device', 'C', dest=TEMPLATE, footprint='Capacitor_SMD:C_0402_1005Metric', value='1uF', PN='CL05A105MQ5NNNC', Manf='Samsung Electro-Mechanics')
+        d_inductor_1uH = Part('Device', 'L', dest=TEMPLATE, footprint='Inductor_SMD:L_Coilcraft_XxL4020', value='1uH', PN='78438357010', Manf='Wurth Electronics Inc.')
+        d_inductor_2_2uH = Part('Device', 'L', dest=TEMPLATE, footprint='Inductor_SMD:L_0805_2012Metric', value='2.2uH', PN='LQM21FN2R2N00D', Manf='Murata Electronics')
+        d_inductor_10uH = Part('Device', 'L', dest=TEMPLATE, footprint='Inductor_SMD:L_0805_2012Metric', value='10uH', PN='LQM21FN100M70L', Manf='Murata Electronics')
 
-        d_tps561201 = Part('gkl_pmic', 'TPS561201', dest=TEMPLATE, footprint='Package_TO_SOT_SMD:TSOT-23-6')
+        d_tps561201 = Part('gkl_pmic', 'TPS561201', dest=TEMPLATE, footprint='Package_TO_SOT_SMD:TSOT-23-6', PN='TPS561201DDCT', Manf='Texas Instruments')
         
 
-        d_con_10P_2x5 = Part('Connector_Generic', 'Conn_02x05_Odd_Even', dest=TEMPLATE, footprint='gkl_conn:FTSH-105-XX-X-DV')
-        d_qspi_flash = Part('gkl_mem', 'AT25SF081', dest=TEMPLATE, footprint='Package_SO:SOIC-8_5.23x5.23mm_P1.27mm')
+        d_con_10P_2x5 = Part('Connector_Generic', 'Conn_02x05_Odd_Even', dest=TEMPLATE, footprint='gkl_conn:FTSH-105-XX-X-DV', PN='FTSH-105-01-F-DV-K-TR', Manf='Samtec Inc.')
+        d_qspi_flash = Part('gkl_mem', 'AT25SF081', dest=TEMPLATE, footprint='Package_SO:SOIC-8_5.23x5.23mm_P1.27mm', PN='W25Q128JVSIM TR', Manf='Winbond Electronics')
 
-        d_button = Part('Switch', 'SW_Push', dest=TEMPLATE, footprint='gkl_misc:EVQP4')
+        d_button = Part('Switch', 'SW_Push', dest=TEMPLATE, footprint='gkl_misc:EVQP4', PN='EVQ-P42B3M', Manf='Panasonic Electronic Components')
 
-        d_usb = Part('Connector', 'USB_C_Receptacle_USB2.0', dest=TEMPLATE, footprint='Connector_USB:USB_C_Receptacle_Palconn_UTC16-G')
+        d_usb = Part('Connector', 'USB_C_Receptacle_USB2.0', dest=TEMPLATE, footprint='Connector_USB:USB_C_Receptacle_Palconn_UTC16-G', PN='CX90M-16P', Manf='Hirose Electric Co Ltd')
 
-        d_bmx160 = Part('gkl_misc', 'BMX160', dest=TEMPLATE, footprint='Package_LGA:Bosch_LGA-14_3x2.5mm_P0.5mm')
+        d_bmx160 = Part('gkl_misc', 'BMX160', dest=TEMPLATE, footprint='Package_LGA:Bosch_LGA-14_3x2.5mm_P0.5mm', PN='BMX160', Manf='Bosch Sensortec')
 
-        d_crystal = Part('Device', 'Crystal', dest=TEMPLATE, footprint='Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm')
-        d_con_3P_2mm = Part('Connector_Generic', 'Conn_01x03', dest=TEMPLATE, footprint='gkl_conn:3P_Battery_Connector')
+        d_crystal = Part('Device', 'Crystal', dest=TEMPLATE, footprint='Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm', PN='ECS-.327-9-12R-C-TR', Manf='ECS Inc.')
+        d_con_JST_PA_2 = Part('Connector_Generic', 'Conn_01x02', dest=TEMPLATE, footprint='gkl_conn:SB02B-PASK-2', PN='S02B-PASK-2(LF)(SN)', Manf='JST Sales America Inc.')
 
-        d_ltc4367 = Part('gkl_pmic', 'LTC4367', dest=TEMPLATE, footprint='Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.5mm_EP1.66x2.38mm')
-        d_aon7804 = Part('gkl_mosfet', 'AON7804', dest=TEMPLATE, footprint='gkl_housings_dfn:DFN3X3_8L_EP2_P')
+        d_ltc4367 = Part('gkl_pmic', 'LTC4367', dest=TEMPLATE, footprint='Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.5mm_EP1.66x2.38mm', PN='LTC4367IDD#PBF', Manf='Linear Technology/Analog Devices')
+        d_aon7804 = Part('gkl_mosfet', 'AON7804', dest=TEMPLATE, footprint='gkl_housings_dfn:DFN3X3_8L_EP2_P', PN='AON7804', Manf='Alpha / Omega Semiconductor Inc.')
         
-        d_fb = Part('Device', 'Ferrite_Bead_Small', dest=TEMPLATE, footprint='Inductor_SMD:L_0402_1005Metric')
+        d_fb = Part('Device', 'Ferrite_Bead_Small', dest=TEMPLATE, footprint='Inductor_SMD:L_0402_1005Metric', PN='BK1005HS102-T', Manf='Taiyo Yuden')
         d_ncp115 = Part('gkl_pmic', 'NCP167', dest=TEMPLATE, footprint='gkl_housings_son:X2SON_4_1.0x1.0mm')
 
-        d_ltc4413_1 = Part('gkl_pmic', 'LTC4413-2', dest=TEMPLATE, footprint='Package_DFN_QFN:DFN-10-1EP_3x3mm_P0.5mm_EP1.65x2.38mm')
+        d_ltc4413_1 = Part('gkl_pmic', 'LTC4413-2', dest=TEMPLATE, footprint='Package_DFN_QFN:DFN-10-1EP_3x3mm_P0.5mm_EP1.65x2.38mm', PN='LTC4413EDD-1#PBF', Manf='Linear Technology/Analog Devices')
         
 
         # Battery and protection circuit 
@@ -95,9 +95,9 @@ class d20_r0_1_sch():
         ## Power supplies
         
         # Battery Input
-        batt_connector = d_con_3P_2mm()
+        batt_connector = d_con_JST_PA_2()
         batt_connector['1'] += ppbatt
-        batt_connector['3'] += gnd
+        batt_connector['2'] += gnd
 
         # Voltage protection/cutoff
         ltc4367 = d_ltc4367()
@@ -111,24 +111,25 @@ class d20_r0_1_sch():
         ltc4367['VIN'] += ppbatt
         ltc4367['GATE'] += aon7804[6, 3]
         ltc4367['VOUT'] += ppbatt_prot
-        ltc4367['~SHDN'] += place_part_inline(gnd, res(value='510k'))
+        ltc4367['~SHDN'] += place_part_inline(gnd, res(value='510k', PN='RC0402FR-07510KL', Manf='Yageo'))
         ltc4367['GND'] += gnd
         
-        ltc_r1 = res(value='150k')
-        ltc_r2 = res(value='150k')
-        ltc_r3 = res(value='5.1M')
+        #Values calculated create UnderVoltage: 6.74v, OverVoltage: 16.01v
+        ltc_r1 = res(value='25.3k',PN='RC0402FR-0725K3L', Manf='Yageo')
+        ltc_r2 = res(value='34.8k',PN='RC0402FR-0734K8L', Manf='Yageo')
+        ltc_r3 = res(value='750k',PN='RC0402FR-07750KL', Manf='Yageo')
         
-        ltc_r1[1] += ppbatt
-        ltc4367['OV'] += ltc_r1[2], ltc_r2[1]
-        ltc4367['UV'] += ltc_r2[2], ltc_r3[1]
-        ltc_r3[2] += gnd
+        ppbatt +=        ltc_r3[1]
+        ltc4367['OV'] += ltc_r3[2], ltc_r2[1]
+        ltc4367['UV'] +=            ltc_r2[2], ltc_r1[1]
+        gnd +=                                 ltc_r1[2]
         
 
         # 4A 4.5/5V converter
         dcdc_5v = d_tps62135()
         
         dcdc_5v['VIN', 'GND'] += ppbatt_prot, gnd
-        dcdc_5v['EN'] += place_part_inline(ppbatt_prot, res(value='100k'))
+        dcdc_5v['EN'] += place_part_inline(ppbatt_prot, res(value='100k',PN='RC0402FR-07100KL', Manf='Yageo'))
         dcdc_5v['VSEL', 'MODE'] += gnd
         dcdc_5v['SW'] += place_part_inline(pp4v5_in , d_inductor_1uH())
         dcdc_5v['VOS'] += pp4v5_in
@@ -139,17 +140,17 @@ class d20_r0_1_sch():
         # Bulk Output Capacitors
         pp4v5_in += place_part_inline(gnd, d_cap_10uf_16V_0603())
 
-        # feedback
+        # feedback resistors for 4.53V Well above the Vf of the LEDs, swap 93.1k for 82k for 5v output
         dcdc_5v['FB'] += Net('5v_fb')
-        dcdc_5v['FB'] += place_part_inline(pp4v5_in , res())
-        dcdc_5v['FB'] += place_part_inline(gnd , res())
+        dcdc_5v['FB'] += place_part_inline(pp4v5_in , res(value='510k',PN='RC0402FR-07510KL', Manf='Yageo'))
+        dcdc_5v['FB'] += place_part_inline(gnd , res(value='93.1k',PN='RC0402FR-0793K1L', Manf='Yageo'))
 
 
         # 1A 3v3 Converter
         dcdc_3v3 = d_tps561201()
 
         dcdc_3v3['VIN', 'GND'] += pp4v5, gnd
-        dcdc_3v3['EN'] += place_part_inline(pp4v5, res(value='100k'))
+        dcdc_3v3['EN'] += place_part_inline(pp4v5, res(value='100k',PN='RC0402FR-07100KL', Manf='Yageo'))
         dcdc_3v3['VBST'] += place_part_inline(dcdc_3v3['SW'], c_100nF())
         dcdc_3v3['SW'] += place_part_inline(pp3v3 , d_inductor_2_2uH())
         
@@ -161,11 +162,11 @@ class d20_r0_1_sch():
         
         # feedback
         dcdc_3v3['VFB'] += Net('3v3_fb')
-        dcdc_3v3['VFB'] += place_part_inline(pp3v3 , res())
-        dcdc_3v3['VFB'] += place_part_inline(gnd , res())
+        dcdc_3v3['VFB'] += place_part_inline(pp3v3 , res(value='33.2k',PN='RC0402FR-0733K2L', Manf='Yageo'))
+        dcdc_3v3['VFB'] += place_part_inline(gnd , res(value='10k',PN='RC0402FR-0710KL', Manf='Yageo'))
         
         # 2v5 Power supply
-        ldo_2v5 = d_ncp115(name='NP115-2.5')
+        ldo_2v5 = d_ncp115(name='NP115-2.5', PN='NCP115CMX250TCG', Manf='ON Semiconductor')
         ldo_2v5['IN'] += pp3v3
         ldo_2v5['EN'] += pp3v3
         ldo_2v5['OUT'] += pp2v5
@@ -176,7 +177,7 @@ class d20_r0_1_sch():
 
 
         # 1v2 Power supply
-        ldo_1v2 = d_ncp115(name='NP115-1.2')
+        ldo_1v2 = d_ncp115(name='NP115-1.2', PN='NCP115AMX120TCG', Manf='ON Semiconductor')
         ldo_1v2['IN'] += pp3v3
         ldo_1v2['EN'] += pp3v3
         ldo_1v2['OUT'] += pp1v2
@@ -220,15 +221,15 @@ class d20_r0_1_sch():
         led_b = Net('led_b')
         led_b += led[4]
 
-        uc['PA13'] += place_part_inline(led_r, res(value='470R'))
-        uc['PA15'] += place_part_inline(led_g, res(value='470R'))
-        uc['PA14'] += place_part_inline(led_b, res(value='470R'))
+        uc['PA13'] += place_part_inline(led_r, res(value='470R',PN='RC0402FR-07470RL', Manf='Yageo'))
+        uc['PA15'] += place_part_inline(led_g, res(value='470R',PN='RC0402FR-07470RL', Manf='Yageo'))
+        uc['PA14'] += place_part_inline(led_b, res(value='470R',PN='RC0402FR-07470RL', Manf='Yageo'))
 
 
         crystal = d_crystal(value='32.768kHz')
         crystal['1','2'] += uc['PA00', 'PA01']
-        crystal['1'] += place_part_inline(gnd, cap(value='22pF'))
-        crystal['2'] += place_part_inline(gnd, cap(value='22pF'))
+        crystal['1'] += place_part_inline(gnd, cap(value='22pF', PN='CC0402JRNPO9BN220', Manf='Yageo'))
+        crystal['2'] += place_part_inline(gnd, cap(value='22pF', PN='CC0402JRNPO9BN220', Manf='Yageo'))
 
 
         # Create our ice40up5k
@@ -255,9 +256,9 @@ class d20_r0_1_sch():
         ice_led_b = Net('ice_led_b')
         ice_led_b += ice_led[4]
 
-        ice40['RGB0'] += place_part_inline(ice_led_r, res(value='470R'))
-        ice40['RGB1'] += place_part_inline(ice_led_g, res(value='470R'))
-        ice40['RGB2'] += place_part_inline(ice_led_b, res(value='470R'))
+        ice40['RGB0'] += place_part_inline(ice_led_r, res(value='470R',PN='RC0402FR-07470RL', Manf='Yageo'))
+        ice40['RGB1'] += place_part_inline(ice_led_g, res(value='470R',PN='RC0402FR-07470RL', Manf='Yageo'))
+        ice40['RGB2'] += place_part_inline(ice_led_b, res(value='470R',PN='RC0402FR-07470RL', Manf='Yageo'))
 
         ice40_config = [Net('ice_config_miso'),
                         Net('ice_config_mosi'),
@@ -393,7 +394,7 @@ class d20_r0_1_sch():
             pp4v5 += place_part_inline(gnd, d_cap_10uf_16V_0603())
             pp4v5 += place_part_inline(gnd, c_100nF())
         
-        ice40['~CRESET'] += place_part_inline(gnd, res(value='10k'))
+        ice40['~CRESET'] += place_part_inline(gnd, res(value='10k',PN='RC0402FR-0710KL', Manf='Yageo'))
 
 
         # Wire in SWD connection
@@ -407,12 +408,12 @@ class d20_r0_1_sch():
         con_swd[6] += swo
         con_swd[10] += swdrst
 
-        swdclk += place_part_inline(pp3v3, res(value='1k'))
+        swdclk += place_part_inline(pp3v3, res(value='1k',PN='RC0402FR-071KL', Manf='Yageo'))
 
         uc['PA30', 'PA31'] += swdclk, swdio
         uc['~RESET'] += swdrst        
 
-        uc['~RESET'] += place_part_inline(pp3v3, res(value='10k'))
+        uc['~RESET'] += place_part_inline(pp3v3, res(value='10k',PN='RC0402FR-0710KL', Manf='Yageo'))
         uc['~RESET'] += place_part_inline(gnd, c_100nF())
 
         # Wire in Accelerometer
@@ -438,7 +439,7 @@ class d20_r0_1_sch():
         # wire in FLASH
         qspi_flash = d_qspi_flash()
         qspi_flash['VCC', 'GND'] += pp3v3, gnd
-        qspi_flash['~CS'] += place_part_inline(pp3v3, res(value='10k'))
+        qspi_flash['~CS'] += place_part_inline(pp3v3, res(value='10k',PN='RC0402FR-0710KL', Manf='Yageo'))
 
         qspi_bus     = [Net('qspi_bus_io0'),
                         Net('qspi_bus_io1'),
@@ -489,9 +490,9 @@ class d20_r0_1_sch():
         c_usb[1,2] += pp_usb,gnd
 
         usb_c['CC1'] += Net('cc1')
-        usb_c['CC1'] += place_part_inline(gnd, res(name='5.1k'))
+        usb_c['CC1'] += place_part_inline(gnd, res(name='5.1k',PN='RC0402FR-075K1L', Manf='Yageo'))
         usb_c['CC2'] += Net('cc2')
-        usb_c['CC2'] += place_part_inline(gnd, res(name='5.1k'))
+        usb_c['CC2'] += place_part_inline(gnd, res(name='5.1k',PN='RC0402FR-075K1L', Manf='Yageo'))
 
         
         
@@ -511,3 +512,4 @@ class d20_r0_1_sch():
 if __name__ == "__main__":
     d20_r0_1_sch()
     generate_netlist()
+    generate_xml()
