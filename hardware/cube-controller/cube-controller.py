@@ -2,6 +2,7 @@
 
 from skidl import *
 from string import ascii_uppercase
+import subprocess
 
 
 def place_part_inline(pin_net, part):
@@ -513,3 +514,6 @@ if __name__ == "__main__":
     d20_r0_1_sch()
     generate_netlist()
     generate_xml()
+
+    # Create a BOM
+    subprocess.call(['python3', '/usr/share/kicad/plugins/bom_csv_grouped_by_value.py', 'cube-controller.xml', 'bom/cube-controller.csv'])
