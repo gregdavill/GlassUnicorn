@@ -17,7 +17,7 @@ def add_decopling(nets, part):
         p[1] += n
         p[2] += Net.get('gnd')
 
-class d20_r0_1_sch():
+class CubeController():
 
 
     def __init__(self):
@@ -511,7 +511,7 @@ class d20_r0_1_sch():
 #===============================================================================
 
 if __name__ == "__main__":
-    d20_r0_1_sch()
+    CubeController()
     generate_netlist()
     generate_xml()
 
